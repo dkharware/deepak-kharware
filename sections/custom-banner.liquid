@@ -3,7 +3,7 @@
 <div class="Custom-NavBar">
   {% if section.settings.brandName != blank %}
     <div class="NavBar-BrandTitle">
-      {{ section.settings.brandName }}
+      {{ section.settings.brandName  }}
     </div>
   {%  endif %}  
   {% if section.settings.Announcement != blank %}
@@ -59,7 +59,7 @@
             "content": "Banner Header"
         },
         {
-            "type": "text",
+            "type": "image_picker",
             "id": "brandName",
             "label": "Brand Name"
         },
