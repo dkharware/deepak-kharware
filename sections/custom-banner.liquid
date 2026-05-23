@@ -1,4 +1,21 @@
 <section class="cusom-banner">
+<div class="Custom-NavBar">
+  {% if section.settings.brandName != blank %}
+    <div class="NavBar-BrandTitle">
+      {{ section.settings.brandName }}
+    </div>
+  {%  endif %}  
+  {% if section.settings.Announcement != blank %}
+    <div class="NavBar-Announcement_Text">
+      {{ section.settings.Announcement }}
+    </div>
+  {%  endif %}  
+  {% if section.settings.button_text-header != blank %}
+    <div class="NavBar-button-text_header">
+      {{ section.settings.brandName }}
+    </div>
+  {%  endif %}  
+</div>    
 <div class="custom-banner__content page-width">
     {% if section.settings.heading != blank  %}
     <h1 class="custom-banner__heading"> 
