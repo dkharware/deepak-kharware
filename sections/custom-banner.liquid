@@ -3,7 +3,7 @@
 <div class="Custom-NavBar">
   {% if section.settings.brandName != blank %}
     <div class="NavBar-BrandTitle">
-      {{ section.settings.brandName  }}
+      {{ section.settings.brandName | image_url: width: 150 | image_tag  }}
     </div>
   {%  endif %}  
   {% if section.settings.Announcement != blank %}

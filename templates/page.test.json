@@ -12,6 +12,10 @@
     "banner": {
       "type": "custom-banner",
       "settings": {
+        "brandName": "shopify://shop_images/Group_1000007777.png",
+        "Announcement": "",
+        "button_text-header": "",
+        "button_link_header": "",
         "heading": "The Gift Guide",
         "subheading": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
         "button_text": "Shop Now",
