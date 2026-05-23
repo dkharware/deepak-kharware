@@ -1,5 +1,5 @@
 <section class="cusom-banner">
-    
+
 <div class="Custom-NavBar">
   {% if section.settings.brandName != blank %}
     <div class="NavBar-BrandTitle">
@@ -12,9 +12,9 @@
     </div>
   {%  endif %}  
   {% if section.settings.button_text-header != blank %}
-    <div class="NavBar-button_text">
-      {{ section.settings.brandName }}
-    </div>
+    <a href="{{ section.settings.button_link_header }}" class="NavBar-button_text">
+      {{ section.settings.button_text-header }}
+    </a>
   {%  endif %}  
 </div>    
 
