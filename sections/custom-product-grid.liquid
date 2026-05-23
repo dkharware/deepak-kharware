@@ -8,9 +8,17 @@
                     <div class="custom-grid__image"> 
                         {{ product.featured_image | image_url: width: 600 | image_tag }}  
                     </div>
+                    {% comment %} <h3 class="custom-grid__title">
+                        {{ product.title }}
+                    </h3> {% endcomment %}
+                   <button  >
+                    +
+                   </button>
+
+
                 </div>
             {% endif %}
-         
+            
         {% endfor %}    
     </div>
 </section> 
