@@ -1,0 +1,68 @@
+<section class="cusom-banner">
+<div class="custom-banner__content page-width">
+    {% if section.settings.heading != blank  %}
+    <h1 class="custom-banner__heading"> 
+        {{ section.settings.heading }}
+    </h1>
+    {%  endif %} 
+
+    {%  if section.settings.subheading != blank %}
+        <p class="custom-banner___text">
+            {{ section.settings.subheading  }}
+        </p>
+    {%  endif  %}
+
+    {%  if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="custom-banner___button">
+            {{ section.settings.button_text  }}
+        </a>
+    {%  endif  %}
+</div>
+
+    {%  if section.settings.image != blank %}
+        <div  class="custom-banner___image">
+            {{ section.settings.image 
+                | image_url: width: 1600 
+                | image_tag }}
+        </div>
+    {%  endif  %}
+</section>
+
+{% schema %}
+{
+    "name": "Custom Banner",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "textarea",
+            "id": "subheading",
+            "label": "Subheading"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Banner Image"
+        }
+        
+    ],
+    "presets": [
+        {
+            "name": "Custom Banner"
+        }
+    ]
+}
+{%  endschema %}
