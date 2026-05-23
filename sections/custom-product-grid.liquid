@@ -11,16 +11,30 @@
                     {% comment %} <h3 class="custom-grid__title">
                         {{ product.title }}
                     </h3> {% endcomment %}
-                   <button  >
-                    +
-                   </button>
-
+                   <button class="custon-grid__button js-open-popup" >+</button>
 
                 </div>
             {% endif %}
             
         {% endfor %}    
     </div>
+ 
+    {% comment %} Popup {% endcomment %}
+
+    <div class="product-popup" id="product-popup">
+        <div product-popup__overlay></div> 
+        <div class="product-popup__content">
+            <button class="product-popup__close">
+                X
+            </button>
+            <div class="product-popup__inner">
+                <div class="product-popup__image" >
+                    <img id="popup-image" width="120" height="140" src="" alt="">
+                </div>
+            </div>    
+        </div>
+    </div>
+
 </section> 
 {% schema %}
 {
