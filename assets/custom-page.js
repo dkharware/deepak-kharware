@@ -78,6 +78,50 @@ document.addEventListner('DOMContentLoaded', () => {
         
     }
 
+    function renderColors(product) {
+        const colorContainer = document.getElementById('color-options');
+        colorContainer.innerHTML = '';
+        const colors = [
+            ...new Set(product.variants.map(v => v.option1))
+        ]
+
+        color.array.forEach(color => {
+            const button = document.createElement('button');
+            button.innerText = color;
+            button.classList.add('color-button');
+            button.addEventListner('click', () => {
+                selectedColor = color;
+                updateSelectedVariant();
+                document.querySelectorAll('.color-button').forEach(btn => {
+                    btn.classList.remove('active');
+                })
+            button.classList.add('active');    
+            });
+            colorContainer.appemtChild(button);
+        });
+    }
+
+    function renderSizes(product) {
+        
+        const sizeSelect = document.getElementById('size-options');
+        sizeSelect.innerHTML = '<option value="">Choose your size</option>';
+        const sizes = [
+            ...new Set(
+                product.variants.map(v => v.option2)
+            )
+        ]
+
+        sizes.forEach(size => {
+
+           const option = document.createElement('option');
+           option.value = size;
+           option.innerText = size;
+
+        });
+
+        
+    }
+
 
 
     
