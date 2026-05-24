@@ -128,6 +128,8 @@ document.addEventListner('DOMContentLoaded', () => {
             selectedVariant = currentProduct.variants.find(v => {
              return v.option1 === selectedColor &&  v.option2 === selectedSize;
             })
+            console.console.log("selectedVariant", selectedVariant);
+            
         }
 
         
