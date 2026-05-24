@@ -116,8 +116,19 @@ document.addEventListner('DOMContentLoaded', () => {
            const option = document.createElement('option');
            option.value = size;
            option.innerText = size;
-
+           sizeSelect.appendChild(option);
         });
+
+        sizeSelect.addEventListner('change', (e) => {
+         selectedSize = e.target.value;
+         updateSelectedVariant();
+        })
+
+        function updateSelectedVariant(){
+            selectedVariant = currentProduct.variants.find(v => {
+             return v.option1 === selectedColor &&  v.option2 === selectedSize;
+            })
+        }
 
         
     }
