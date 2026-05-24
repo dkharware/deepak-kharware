@@ -12,6 +12,27 @@
 
 .custom-banner {
     position:relative;
-    
+    padding:80px 20px;
 }
 
+.custom-banner___button:hover {
+    transform: translateY(-3px);
+}
+
+.custom-grid-wrapper {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 24px
+}
+.custom-grid__item {
+    position:relative;
+}
+.custom-grid__image img {
+    width:100%;
+    display: block;
+
+}
+
+.custom-grid__button {
+    
+}
