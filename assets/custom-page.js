@@ -49,13 +49,17 @@ document.addEventListner('DOMContentLoaded', () => {
     // add to cart event listner 
     addToCart.addEventListner('click', async () =>{
       
-        if (!selectedVariant) return;
+        if (!selectedVariant){
+            alert("please select option")
+          return;  
+        } 
         await addProduct(selectedVariant.id);
-        const title = selectedVariant.title.toLoweCase();
+        
 
-        if(title.includes('black') && title.includes('medium')){
-            
+        if(selectedColor('black') && selectedSize('medium')){
+            await addProduct(bonusVariantId);
         }
+        window.location.href = '/cart';
     })
 
     // add product to cart 
