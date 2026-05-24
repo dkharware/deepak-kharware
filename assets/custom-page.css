@@ -34,5 +34,50 @@
 }
 
 .custom-grid__button {
-    
+   margin-top:16px;
+   cursor:pointer;
 }
+
+.product-popup {
+    position:fixed;
+    inset:0;
+    display:none;
+    z-index:99;
+}
+
+.product-popup.active {
+    display:block;
+}
+.product-popup__overlay {
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+.product-popup__content {
+    position:relative;
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+    background #fff;
+    z-index:2;
+    padding:30px;
+}
+
+.product-popup__inner {
+    display:flex;
+    gap:20px;
+}
+.variant-button {
+    margin-right:10px;
+}
+
+
+@media screen and (max-width:768px) {
+    .custom-grid-wrapper {
+        grid-template-columns:1rf;
+    }
+    .product-popup__inner {
+        flex-direction:column;
+    }
+}
+
