@@ -81,6 +81,12 @@ a.NavBar-button_text {
     text-align: center;
     text-transform: uppercase;
 }
+.Custom-NavBar {
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
 
 
 
