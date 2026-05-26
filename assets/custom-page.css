@@ -99,11 +99,11 @@ a.NavBar-button_text {
 section.custom-grid {
     margin: 90px 50px 50px;
 }
-
-
 .custom-banner___image img {
     width: 100%;
+    max-height: 780px;
 }
+
 
 
 @media screen and (max-width:768px) {
