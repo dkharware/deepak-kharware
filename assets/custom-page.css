@@ -262,6 +262,8 @@ button.custon-grid__button.js-open-popup {
 
 .custom-arrow{
     font-size: 14px;
+    width:55px;
+    border-left: 0.5px solid #000000;
 }
 
 
