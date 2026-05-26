@@ -96,6 +96,9 @@ a.NavBar-button_text {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+section.custom-grid {
+    margin: 90px 50px 50px;
+}
 
 
 .custom-banner___image img {
