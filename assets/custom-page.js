@@ -135,10 +135,15 @@ popup.addEventListener('click', (e) => {
         colors.forEach(color => {
 
             var button = document.createElement('button');
-            button.innerText = color;
-            button.style.borderLeft = '5px solid ' + color.toLowerCase();
-
+            var colorDot = document.createElement('span');
+             
             button.classList.add('color-button');
+            colorDot.style.backgroundColor = color;
+            colorDot.classList.add('color-dot');
+            button.appendChild(colorDot);
+            button.appendChild(document.createTextNode(color));
+           
+           
             button.addEventListener('click', () => {
 
                 selectedColor = color;
