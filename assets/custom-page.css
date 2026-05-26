@@ -131,7 +131,14 @@ p.custom-banner___text {
     line-height: 140%;
     letter-spacing: 0px;
 }
-
+button.custon-grid__button.js-open-popup {
+    background: #F8F8F8E5;
+    border: 0;
+    border-radius: 50px;
+    width: 22px;
+    height: 22px;
+    font-size: 17px;
+}
 
 
 @media screen and (max-width:768px) {
