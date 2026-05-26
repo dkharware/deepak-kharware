@@ -123,42 +123,56 @@ popup.addEventListener('click', (e) => {
     }
 
     // render colors
-    function renderColors(product) {
+   function renderColors(product) {
 
-        var colorContainer = document.getElementById('color-options');
-        colorContainer.innerHTML = '';
-        var colors = [
-            ...new Set(product.variants.map(v => v.option2))
-        ];
+    var colorContainer = document.getElementById('color-options');
 
-        colors.forEach(color => {
+    colorContainer.innerHTML = '';
 
-            var button = document.createElement('button');
-            var colorDot = document.createElement('span');
-             
-            button.classList.add('color-button');
-            colorDot.style.backgroundColor = color;
-            colorDot.classList.add('color-dot');
-            button.appendChild(colorDot);
-            button.appendChild(document.createTextNode(color));
-           
-           
-            button.addEventListener('click', (button) => {
+    var colors = [
+        ...new Set(product.variants.map(v => v.option2))
+    ];
 
-                selectedColor = color;
-                updateSelectedVariant(product);
-                document.querySelectorAll('.color-button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
+    colors.forEach(color => {
 
-                button.classList.add('active');
+        var button = document.createElement('button');
+
+        var colorDot = document.createElement('span');
+
+        button.classList.add('color-button');
+
+        colorDot.style.backgroundColor = color;
+
+        colorDot.classList.add('color-dot');
+
+        button.appendChild(colorDot);
+
+        button.appendChild(
+            document.createTextNode(color)
+        );
+
+        button.addEventListener('click', () => {
+
+            selectedColor = color;
+
+            updateSelectedVariant(product);
+
+            document.querySelectorAll('.color-button')
+            .forEach(btn => {
+
+                btn.classList.remove('active');
+
             });
 
-            colorContainer.appendChild(button);
+            button.classList.add('active');
 
         });
 
-    }
+        colorContainer.appendChild(button);
+
+    });
+
+}
 
     // render sizes
     function renderSizes(product) {
