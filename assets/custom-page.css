@@ -95,7 +95,7 @@ a.NavBar-button_text {
     display:grid;
     grid-template-columns:(3,1rf);
     gap:20px;
-    }
+}
 
 
 .custom-banner___image img {
