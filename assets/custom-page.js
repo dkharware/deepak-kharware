@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // get unique sizes
         var sizes = [
             ...new Set(
-                product.variants.map(v => v.option2)
+                product.variants.map(v => v.option1)
             )
         ];
 
