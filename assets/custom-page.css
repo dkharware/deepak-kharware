@@ -90,11 +90,16 @@ a.NavBar-button_text {
     background: #FFF544;
     font-family: Jost;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 20.48px;
     text-align: center;
     text-transform: uppercase;
+    padding: 11px 22px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    gap: 18px;
+    align-items: center;
 }
 .Custom-NavBar {
     background: #F5F5F5;
@@ -141,21 +146,7 @@ button.custon-grid__button.js-open-popup {
     position: absolute;
     cursor:pointer;
 }
-a.NavBar-button_text {
-    background: #FFF544;
-    font-family: Jost;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20.48px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 11px 22px;
-    color: #000;
-    text-decoration: none;
-    display: flex;
-    gap: 29px;
-    align-items: center;
-}
+
 .custom-grid_item {
     position: relative;
 }
