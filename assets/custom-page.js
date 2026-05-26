@@ -129,7 +129,7 @@ popup.addEventListener('click', (e) => {
         var colorContainer = document.getElementById('color-options');
         colorContainer.innerHTML = '';
         var colors = [
-            ...new Set(product.variants.map(v => v.option1))
+            ...new Set(product.variants.map(v => v.option2))
         ];
 
         colors.forEach(color => {
