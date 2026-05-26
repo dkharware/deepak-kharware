@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var selectedColor = '';
     var selectedSize = '';
 
-    // bonus product variant id
-    var bonusVariantId = 123456789;
-
+  
     // open popup
     document.querySelectorAll('.js-open-popup').forEach(button => {
 
@@ -80,13 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         await addProduct(selectedVariant.id);
-
-        // add bonus product
-        if (selectedColor === 'black' && selectedSize === 'medium') {
-
-            await addProduct(bonusVariantId);
-
-        }
 
         window.location.href = '/cart';
 
