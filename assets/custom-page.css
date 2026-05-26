@@ -231,6 +231,7 @@ button.custon-grid__button.js-open-popup {
 .custom-select-trigger{
     background: #fff;
     height: 40px;
+    padding-left:13px;
     cursor: pointer;
     font-size: 16px;
     color: #111;
