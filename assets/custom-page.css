@@ -222,8 +222,7 @@ button.custon-grid__button.js-open-popup {
 }
 
 .custom-select-trigger{
-    background: #d9e6f7;
-    border-radius: 999px;
+    background: #fff;
     padding: 14px 20px;
     cursor: pointer;
     font-size: 16px;
@@ -231,6 +230,7 @@ button.custon-grid__button.js-open-popup {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border:0.5px solid #000000;
 }
 
 .custom-options{
