@@ -147,7 +147,10 @@ button.custon-grid__button.js-open-popup {
     top: 50%;
     right: 11%;
 }
-
+.chequered-red-shirt button.custon-grid__button {
+    top: 20%;
+    right: 33%;
+}
 .black-leather-bag button.custon-grid__button {
     bottom: 41%;
     left: 60%;
