@@ -178,7 +178,6 @@ document.addEventListener('DOMContentLoaded', () => {
         sizeSelect.addEventListener('change', (e) => {
 
             selectedSize = e.target.value;
-
             updateSelectedVariant();
 
         });
@@ -189,16 +188,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateSelectedVariant() {
 
         selectedVariant = currentProduct.variants.find(v => {
-
             return (
                 v.option1 === selectedColor &&
                 v.option2 === selectedSize
             );
-
         });
-
         console.log("selectedVariant", selectedVariant);
-
     }
+
+    
 
 });
