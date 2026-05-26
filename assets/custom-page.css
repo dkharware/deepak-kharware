@@ -85,7 +85,11 @@ button.color-button {
     background: #fff;
     border: 0;
 }
-
+span.color-dot {
+    width: 5.81px;
+    display: inline-block;
+    height: 100%;
+}
 h2#popup-title {
     font-family: Jost;
     font-weight: 300;
