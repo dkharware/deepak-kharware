@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         product.variants.forEach( variant => {
          
-            const button = document.createElement('button');
+            var button = document.createElement('button');
             button.classList.add('variant-button');
             button.innerText = variant.title;
             button.addEventListener('click', () => {
@@ -81,14 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderColors(product) {
-        const colorContainer = document.getElementById('color-options');
+        var colorContainer = document.getElementById('color-options');
         colorContainer.innerHTML = '';
-        const colors = [
+        var colors = [
             ...new Set(product.variants.map(v => v.option1))
         ]
 
         colors.forEach(color => {
-            const button = document.createElement('button');
+            var button = document.createElement('button');
             button.innerText = color;
             button.classList.add('color-button');
             button.addEventListener('click', () => {
@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderSizes(product) {
         
-        const sizeSelect = document.getElementById('size-options');
+        var sizeSelect = document.getElementById('size-options');
         sizeSelect.innerHTML = '<option value="">Choose your size</option>';
-        const sizes = [
+        var sizes = [
             ...new Set(
                 product.variants.map(v => v.option2)
             )
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sizes.forEach(size => {
 
-           const option = document.createElement('option');
+           var option = document.createElement('option');
            option.value = size;
            option.innerText = size;
            sizeSelect.appendChild(option);
