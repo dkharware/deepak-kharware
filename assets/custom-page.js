@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await addProduct(selectedVariant.id);
         
 
-        if(selectedColor = 'black' && selectedSize = 'medium'){
+        if(selectedColor === 'black' && selectedSize === 'medium'){
             await addProduct(bonusVariantId);
         }
         window.location.href = '/cart';
