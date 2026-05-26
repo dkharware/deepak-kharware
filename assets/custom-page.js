@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         popupDesc.innerHTML = product.description;
         popupPrice.innerText = Shopify.formatMoney(product.price);
         popupVariants.innerHTML = '';
-        selectedVariant = product.varients[0];
+        selectedVariant = product.variants[0];
         
         product.variants.forEach( variant => {
          
