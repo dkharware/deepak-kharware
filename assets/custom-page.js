@@ -1,5 +1,4 @@
 document.addEventListner('DOMContentLoaded', () => {
-
     const popup = document.getElementById("product-popup");
     const popupImage = document.getElementById("popup-image");
     const popupTitle = document.getElementById("popup-title");
