@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
 
-            var response = await fetch('/products/' + handle + '.js');
+            var response = await fetch('/products/' + currentProduct + '.js');
             var product = await response.json();
 
             console.log(product);
