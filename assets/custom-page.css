@@ -240,6 +240,7 @@ button#popup-add-to-cart {
     line-height: 20.48px;
     letter-spacing: 0px;
     text-align: center;
+    margin-top:51px;
     text-transform: uppercase;
 }
 .custom-select-trigger {
