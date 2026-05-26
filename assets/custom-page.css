@@ -91,7 +91,10 @@ a.NavBar-button_text {
     height: 19px;
     width: 150px;
 }
-
+.custom-grid-wrapper {
+    display:grid;
+    grid-template-columns:(3,1rf);
+    }
 
 
 .custom-banner___image img {
