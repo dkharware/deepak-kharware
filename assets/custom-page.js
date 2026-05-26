@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await addProduct(selectedVariant.id);
         
 
-        if(selectedColor('black') && selectedSize('medium')){
+        if(selectedColor = 'black' && selectedSize = 'medium'){
             await addProduct(bonusVariantId);
         }
         window.location.href = '/cart';
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             await fetch('/cart/add.js', {
                 method:'POST',
-                header: {
+                headers: {
                     'Content-Type': 'application/json'
                 },
                 body:JSON.stringify({
