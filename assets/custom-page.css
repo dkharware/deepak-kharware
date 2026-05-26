@@ -129,7 +129,7 @@ button.product-popup__close {
 
 .product-popup__image-title {
     display:flex;
-    gap:20px;
+    gap: 8px;
 }
 .variant-button {
     margin-right:10px;
