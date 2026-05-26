@@ -1,4 +1,4 @@
-document.addEventListner('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById("product-popup");
     const popupImage = document.getElementById("popup-image");
     const popupTitle = document.getElementById("popup-title");
@@ -13,7 +13,7 @@ document.addEventListner('DOMContentLoaded', () => {
     let selectedSize = '';
 
     document.querySelectorAll('.js-open-popup').forEach(button => {
-        button.addEventListner('click', (e) => {
+        button.addEventListener('DOMContentLoaded', () => {('click', (e) => {
             const productCard = e.target.closest('.custom-grid_item');
             currentProduct = JSON.parse(
                 productCard.dataset.product
@@ -46,7 +46,7 @@ document.addEventListner('DOMContentLoaded', () => {
     }
 
     // add to cart event listner 
-    addToCart.addEventListner('click', async () =>{
+    addToCart.addEventListener('click', async () =>{
       
         if (!selectedVariant){
             alert("please select option")
