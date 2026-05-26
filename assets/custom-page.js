@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // render popup data
     function renderPopup(product) {
 
+        console.log("product",product)
+
         popupImage.src = product.featured_image;
         popupTitle.innerText = product.title;
         popupDesc.innerHTML = product.description;
