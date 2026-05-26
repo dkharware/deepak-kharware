@@ -217,6 +217,43 @@ button.custon-grid__button.js-open-popup {
 }
 
 
+.custom-select-wrapper{
+    position: relative;
+    width: 250px;
+}
+
+.custom-select-trigger{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: #fff;
+}
+
+.custom-options{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+
+.custom-options.active{
+    display: block;
+}
+
+.custom-option{
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.custom-option:hover{
+    background: #f3f3f3;
+}
+
+
 
 @media screen and (max-width:768px) {
     .custom-grid_wrapper {
