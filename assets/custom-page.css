@@ -144,6 +144,11 @@ button.custon-grid__button.js-open-popup {
     position: relative;
 }
 
+.black-leather-bag button.custon-grid__button {
+  bottom: 30%;
+  left: 50%; 
+}
+
 
 @media screen and (max-width:768px) {
     .custom-grid_wrapper {
