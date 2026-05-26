@@ -175,6 +175,8 @@ popup.addEventListener('click', (e) => {
 
     // render sizes
     function renderSizes(product) {
+        console.log("product size", product);
+        
 
         var sizeOptions = document.getElementById('size-options');
 
