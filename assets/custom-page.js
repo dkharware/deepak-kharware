@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         popupImage.src = product.featured_image;
         popupTitle.innerText = product.title;
         popupDesc.innerHTML = product.description;
-        popupPrice.innerText = '₹' + (product.price / 100).toFixed(2);
+        popupPrice.innerText = (product.price / 100).toFixed(2);
 
         popupVariants.innerHTML = '';
 
