@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             popup.classList.add('active');
             renderPopup(product);
-            renderColors(product);
             renderSizes(product);
+            renderColors(product);
 
 
         } catch(error) {
