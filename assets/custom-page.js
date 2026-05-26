@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
  
 
-        console.log("sizes", sizes);
+        // console.log("sizes", sizes);
 
         sizes.forEach(size => {
 
