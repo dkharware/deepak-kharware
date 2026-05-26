@@ -25,22 +25,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 productCard.dataset.product
             );
 
-            try {
+             try {
 
             var response = await fetch('/products/' + currentProduct + '.js');
             var product = await response.json();
 
+            popup.classList.add('active');
             console.log(product);
-
             renderPopup(product);
 
-            popup.classList.add('active');
 
         } catch(error) {
 
             console.log(error);
 
         }        
+
+
+            
+
+            popup.classList.add('active');
+            renderPopup(currentProduct);
+            renderColors(currentProduct);
+            renderSizes(currentProduct);
 
         });
 
