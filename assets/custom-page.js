@@ -146,7 +146,7 @@ popup.addEventListener('click', (e) => {
             button.addEventListener('click', (button) => {
 
                 selectedColor = color;
-                updateSelectedVariant();
+                updateSelectedVariant(product);
                 document.querySelectorAll('.color-button').forEach(btn => {
                     btn.classList.remove('active');
                 });
