@@ -200,7 +200,7 @@ popup.addEventListener('click', (e) => {
                 sizeOptions.classList.remove('active');
 
                 // update selected variant
-                updateSelectedVariant();
+                updateSelectedVariant(product);
 
             });
 
@@ -224,7 +224,7 @@ popup.addEventListener('click', (e) => {
     // update selected variant
     function updateSelectedVariant() {
 
-        selectedVariant = currentProduct.variants.find(v => {
+        selectedVariant = product.variants.find(v => {
             return (
                 v.option1 === selectedColor &&
                 v.option2 === selectedSize
