@@ -137,7 +137,7 @@ button.custon-grid__button.js-open-popup {
     border-radius: 50px;
     width: 22px;
     height: 22px;
-    font-size: 17px;
+    font-size: 18px;
     position: absolute;
 }
 .custom-grid_item {
@@ -145,8 +145,8 @@ button.custon-grid__button.js-open-popup {
 }
 
 .black-leather-bag button.custon-grid__button {
-  bottom: 30%;
-  left: 50%; 
+    bottom: 41%;
+    left: 60%;
 }
 
 
