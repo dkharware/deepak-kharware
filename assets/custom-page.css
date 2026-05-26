@@ -87,15 +87,13 @@ a.NavBar-button_text {
     justify-content: space-between;
     padding: 10px 50px;
 }
-
-
-
-
-.Custom-NavBar {
-    background: #F5F5F5;
-    display: flex;
-    justify-content: space-between;
+.NavBar-BrandTitle img {
+    height: 19px;
+    width: 150px;
 }
+
+
+
 .custom-banner___image img {
     width: 100%;
 }
