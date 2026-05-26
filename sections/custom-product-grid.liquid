@@ -6,7 +6,7 @@
             {%  if product != blank %}
                <div  class="custom-grid_item" data-product='{{ product | json | escape }}' > 
                     <div class="custom-grid__image"> 
-                        {{ product.featured_image | image_url: width: 400 | image_tag }}  
+                        {{ product.featured_image | image_url: width: 400, height:444 | image_tag }}  
                     </div>
                     {% comment %} <h3 class="custom-grid__title">
                         {{ product.title }}
