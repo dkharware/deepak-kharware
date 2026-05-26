@@ -76,6 +76,11 @@
 img#popup-image {
     object-fit: cover;
 }
+button.color-button {
+    height: 40px;
+    background: #fff;
+    border: 0;
+}
 div#color-options {
     border: 0.5px solid #000000;
 }
