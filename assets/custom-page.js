@@ -25,11 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 productCard.dataset.product
             );
 
+            try {
+
+            var response = await fetch('/products/' + handle + '.js');
+            var product = await response.json();
+
+            console.log(product);
+
+            renderPopup(product);
+
             popup.classList.add('active');
 
-            renderPopup(currentProduct);
-            renderColors(currentProduct);
-            renderSizes(currentProduct);
+        } catch(error) {
+
+            console.log(error);
+
+        }        
 
         });
 
@@ -73,14 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
     addToCart.addEventListener('click', async () => {
 
         if (!selectedVariant) {
-
             alert("Please select option");
             return;
-
         }
 
         await addProduct(selectedVariant.id);
-
         window.location.href = '/cart';
 
     });
@@ -113,9 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderColors(product) {
 
         var colorContainer = document.getElementById('color-options');
-
         colorContainer.innerHTML = '';
-
         var colors = [
             ...new Set(product.variants.map(v => v.option1))
         ];
@@ -123,25 +129,16 @@ document.addEventListener('DOMContentLoaded', () => {
         colors.forEach(color => {
 
             var button = document.createElement('button');
-
             button.innerText = color;
-
             button.classList.add('color-button');
-
             button.addEventListener('click', () => {
 
                 selectedColor = color;
-
                 updateSelectedVariant();
-
                 document.querySelectorAll('.color-button').forEach(btn => {
-
                     btn.classList.remove('active');
-
                 });
-
                 button.classList.add('active');
-
             });
 
             colorContainer.appendChild(button);
@@ -168,9 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var option = document.createElement('option');
 
             option.value = size;
-
             option.innerText = size;
-
             sizeSelect.appendChild(option);
 
         });
@@ -196,6 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("selectedVariant", selectedVariant);
     }
 
-    
+
 
 });
