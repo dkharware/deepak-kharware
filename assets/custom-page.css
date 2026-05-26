@@ -94,6 +94,7 @@ a.NavBar-button_text {
 .custom-grid-wrapper {
     display:grid;
     grid-template-columns:(3,1rf);
+    gap:20px;
     }
 
 
