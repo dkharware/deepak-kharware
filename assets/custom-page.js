@@ -148,36 +148,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // render sizes
-    function renderSizes(product) {
+   function renderSizes(product) {
 
-        var sizeSelect = document.getElementById('size-options');
+    var sizeOptions = document.getElementById('size-options');
 
-        sizeSelect.innerHTML = '<option value="">Choose your size</option>';
+    var trigger = document.querySelector('.custom-select-trigger');
 
-        var sizes = [
-            ...new Set(
-                product.variants.map(v => v.option2)
-            )
-        ];
+    sizeOptions.innerHTML = '';
 
-        sizes.forEach(size => {
+    var sizes = [
+        ...new Set(product.variants.map(v => v.option2))
+    ];
 
-            var option = document.createElement('option');
+    sizes.forEach(size => {
 
-            option.value = size;
-            option.innerText = size;
-            sizeSelect.appendChild(option);
+        var option = document.createElement('div');
 
-        });
+        option.classList.add('custom-option');
 
-        sizeSelect.addEventListener('change', (e) => {
+        option.innerText = size;
 
-            selectedSize = e.target.value;
+        option.addEventListener('click', () => {
+
+            selectedSize = size;
+
+            trigger.innerText = size;
+
+            sizeOptions.classList.remove('active');
+
             updateSelectedVariant();
 
         });
 
-    }
+        sizeOptions.appendChild(option);
+
+    });
+
+}
 
     // update selected variant
     function updateSelectedVariant() {
