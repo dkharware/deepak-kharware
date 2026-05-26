@@ -136,32 +136,21 @@ popup.addEventListener('click', (e) => {
     colors.forEach(color => {
 
         var button = document.createElement('button');
-
         var colorDot = document.createElement('span');
 
         button.classList.add('color-button');
-
         colorDot.style.backgroundColor = color;
-
         colorDot.classList.add('color-dot');
-
         button.appendChild(colorDot);
-
-        button.appendChild(
-            document.createTextNode(color)
-        );
+        button.appendChild(document.createTextNode(color));
 
         button.addEventListener('click', () => {
 
             selectedColor = color;
-
             updateSelectedVariant(product);
-
-            document.querySelectorAll('.color-button')
-            .forEach(btn => {
-
+            
+            document.querySelectorAll('.color-button').forEach(btn => {
                 btn.classList.remove('active');
-
             });
 
             button.classList.add('active');
