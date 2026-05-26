@@ -4,7 +4,7 @@
         {% assign product = block.settings.product %}
 
             {%  if product != blank %}
-               <div  class="custom-grid_item" data-product='{{ product | json | escape }}' > 
+               <div  class="custom-grid_item {{ product.handle }}" data-product='{{ product | json | escape }}' > 
                     <div class="custom-grid__image"> 
                         {{ product.featured_image | image_url: width: 400, height:444 | image_tag }}  
                     </div>
