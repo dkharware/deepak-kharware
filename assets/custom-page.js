@@ -91,18 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
 
             await fetch('/cart/add.js', {
-
                 method: 'POST',
-
                 headers: {
                     'Content-Type': 'application/json'
                 },
-
                 body: JSON.stringify({
                     id: variantId,
                     quantity: 1
                 })
-
             });
 
         } catch (error) {
