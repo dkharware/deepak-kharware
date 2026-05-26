@@ -89,6 +89,8 @@ button.color-button {
     width: 50%;
     align-items: center;
     gap: 9px;
+    margin: 0;
+    padding: 0;
 }
 
 span.color-dot {
