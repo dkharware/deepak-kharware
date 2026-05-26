@@ -115,7 +115,7 @@ button.product-popup__close {
     padding:25px 20px;
 }
 
-.product-popup__inner {
+.product-popup__image-title {
     display:flex;
     gap:20px;
 }
