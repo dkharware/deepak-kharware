@@ -220,22 +220,30 @@ button.custon-grid__button.js-open-popup {
 .custom-select-wrapper{
     position: relative;
     width: 250px;
+    font-family: sans-serif;
 }
 
 .custom-select-trigger{
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+    background: #d9e6f7;
+    border-radius: 999px;
+    padding: 14px 20px;
     cursor: pointer;
-    background: #fff;
+    font-size: 16px;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .custom-options{
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
     width: 100%;
-    border: 1px solid #ddd;
     background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     display: none;
     z-index: 10;
 }
@@ -245,14 +253,18 @@ button.custon-grid__button.js-open-popup {
 }
 
 .custom-option{
-    padding: 12px 15px;
+    padding: 14px 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .custom-option:hover{
-    background: #f3f3f3;
+    background: #f3f6fb;
 }
 
+.custom-arrow{
+    font-size: 14px;
+}
 
 
 @media screen and (max-width:768px) {
