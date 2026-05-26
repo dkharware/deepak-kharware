@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.classList.add('variant-button');
             button.innerText = variant.title;
-            button.addEventListner('click', () => {
+            button.addEventListener('click', () => {
                 selectedVariant = variant;
             })
             popupVariants.appendChind(button);
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.innerText = color;
             button.classList.add('color-button');
-            button.addEventListner('click', () => {
+            button.addEventListener('click', () => {
                 selectedColor = color;
                 updateSelectedVariant();
                 document.querySelectorAll('.color-button').forEach(btn => {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
            sizeSelect.appendChild(option);
         });
 
-        sizeSelect.addEventListner('change', (e) => {
+        sizeSelect.addEventListener('change', (e) => {
          selectedSize = e.target.value;
          updateSelectedVariant();
         })
