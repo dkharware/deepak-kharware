@@ -179,10 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
             option.addEventListener('click', () => {
 
                 selectedSize = size;
-
                 // update selected text
                 triggerText.innerText = size;
-
                 // close dropdown
                 sizeOptions.classList.remove('active');
 
