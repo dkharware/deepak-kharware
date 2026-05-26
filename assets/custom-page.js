@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // open popup
     document.querySelectorAll('.js-open-popup').forEach(button => {
 
-        button.addEventListener('click', (e) => {
+        button.addEventListener('click', async (e) => {
 
             var productCard = e.target.closest('.custom-grid_item');
 
