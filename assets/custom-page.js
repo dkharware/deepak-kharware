@@ -164,6 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 product.variants.map(v => v.option1)
             )
         ];
+ 
+
+        console.log("sizes", sizes);
 
         sizes.forEach(size => {
 
