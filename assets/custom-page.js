@@ -148,16 +148,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // render sizes
-   function renderSizes(product) {
+function renderSizes(product) {
 
     var sizeOptions = document.getElementById('size-options');
 
-    var trigger = document.querySelector('.custom-select-trigger');
+    var triggerText = document.querySelector(
+        '.custom-select-trigger span'
+    );
 
     sizeOptions.innerHTML = '';
 
+    // get unique sizes
     var sizes = [
-        ...new Set(product.variants.map(v => v.option2))
+        ...new Set(
+            product.variants.map(v => v.option2)
+        )
     ];
 
     sizes.forEach(size => {
@@ -172,15 +177,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
             selectedSize = size;
 
-            trigger.innerText = size;
+            // update selected text
+            triggerText.innerText = size;
 
+            // close dropdown
             sizeOptions.classList.remove('active');
 
+            // update selected variant
             updateSelectedVariant();
 
         });
 
         sizeOptions.appendChild(option);
+
+    });
+
+    // open close dropdown
+    var trigger = document.querySelector(
+        '.custom-select-trigger'
+    );
+
+    trigger.addEventListener('click', () => {
+
+        sizeOptions.classList.toggle('active');
 
     });
 
