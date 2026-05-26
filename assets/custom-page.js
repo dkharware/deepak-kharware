@@ -46,6 +46,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    // close popup button
+document.querySelector('.product-popup__close')
+.addEventListener('click', () => {
+
+    popup.classList.remove('active');
+
+});
+
+
+// close popup outside click
+popup.addEventListener('click', (e) => {
+
+    // popup inner box
+    var popupContent = document.querySelector(
+        '.product-popup__content'
+    );
+
+    // if clicked outside content
+    if (!popupContent.contains(e.target)) {
+
+        popup.classList.remove('active');
+
+    }
+
+});
+
     // render popup data
     function renderPopup(product) {
 
