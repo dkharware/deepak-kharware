@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var popupDesc = document.getElementById("popup-description");
     var addToCart = document.getElementById("popup-add-to-cart");
 
-    var currentProduct = null;
     var selectedVariant = null;
     var selectedColor = '';
     var selectedSize = '';
@@ -20,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             var productCard = e.target.closest('.custom-grid_item');
 
-            currentProduct = JSON.parse(
+            var handle = JSON.parse(
                 productCard.dataset.product
             );
 
              try {
 
-            var response = await fetch('/products/' + currentProduct + '.js');
+            var response = await fetch('/products/' + handle + '.js');
             var product = await response.json();
 
             popup.classList.add('active');
