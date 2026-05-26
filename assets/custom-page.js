@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var popupTitle = document.getElementById("popup-title");
     var popupPrice = document.getElementById("popup-price");
     var popupDesc = document.getElementById("popup-description");
-    var popupVariants = document.getElementById("popup-variants");
     var addToCart = document.getElementById("popup-add-to-cart");
 
     var currentProduct = null;
@@ -76,33 +75,10 @@ popup.addEventListener('click', (e) => {
     function renderPopup(product) {
 
         // console.log("product",product)
-
         popupImage.src = product.featured_image;
         popupTitle.innerText = product.title;
         popupDesc.innerHTML = product.description;
         popupPrice.innerText = (product.price / 100).toFixed(2) + "$";
-
-        popupVariants.innerHTML = '';
-
-        selectedVariant = product.variants[0];
-
-        product.variants.forEach(variant => {
-
-            var button = document.createElement('button');
-
-            button.classList.add('variant-button');
-
-            button.innerText = variant.title;
-
-            button.addEventListener('click', () => {
-
-                selectedVariant = variant;
-
-            });
-
-            popupVariants.appendChild(button);
-
-        });
 
     }
 
