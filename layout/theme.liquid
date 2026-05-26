@@ -258,7 +258,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'custom-page.css'| asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
-    <script src="{{ custom-page.js | asset_url }}" defer  ></script>
+    <script src="{{ 'custom-page.js' | asset_url }}" defer  ></script>
 
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
