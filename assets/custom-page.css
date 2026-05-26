@@ -220,6 +220,13 @@ button.custon-grid__button.js-open-popup {
 .custom-select-wrapper{
     position: relative;
 }
+.custom-arrow {
+    font-size: 14px;
+    width: 55px;
+    border-left: .5px solid #000000;
+    padding: 8px 20px;
+    height: 40px;
+}
 
 .custom-select-trigger{
     background: #fff;
