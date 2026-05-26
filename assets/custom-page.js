@@ -136,6 +136,8 @@ popup.addEventListener('click', (e) => {
 
             var button = document.createElement('button');
             button.innerText = color;
+            button.style.borderLeft = '5px solid ' + color.toLowerCase();
+
             button.classList.add('color-button');
             button.addEventListener('click', () => {
 
