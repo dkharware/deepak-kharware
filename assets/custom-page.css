@@ -84,6 +84,7 @@ h2#popup-title {
     letter-spacing: 0px;
     vertical-align: middle;
     margin: 2px 0 10px;
+    min-height:38px;
 }
 div#popup-price {
     font-family: Lustria;
