@@ -84,7 +84,12 @@ button.color-button {
     height: 40px;
     background: #fff;
     border: 0;
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+    gap: 9px;
 }
+
 span.color-dot {
     width: 5.81px;
     display: inline-block;
