@@ -70,10 +70,10 @@
 }
 .product-popup__content {
     position:relative;
+    background-color:#fff;
     width:90%;
     max-width:311px;
     margin:50px auto;
-    background #fff;
     z-index:2;
     padding:30px;
 }
