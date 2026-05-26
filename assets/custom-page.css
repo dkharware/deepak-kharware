@@ -103,6 +103,7 @@ button.color-button {
     height: 40px;
     background: #fff;
     border: 0;
+    position:relative;
     display: inline-flex;
     width: 50%;
     align-items: center;
