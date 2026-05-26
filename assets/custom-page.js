@@ -1,20 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.getElementById("product-popup");
-    const popupImage = document.getElementById("popup-image");
-    const popupTitle = document.getElementById("popup-title");
-    const popupPrice = document.getElementById("popup-price");
-    const popupDesc = document.getElementById("popup-description");
-    const popupVariants = document.getElementById("popup-varients");
-    const addToCart = document.getElementById("popup-add-to-cart");
-
-    let currentProduct = null;
-    let selectedVariant = null;
-    let selectedColor = '';
-    let selectedSize = '';
+    var popup = document.getElementById("product-popup");
+    var popupImage = document.getElementById("popup-image");
+    var popupTitle = document.getElementById("popup-title");
+    var popupPrice = document.getElementById("popup-price");
+    var popupDesc = document.getElementById("popup-description");
+    var popupVariants = document.getElementById("popup-varients");
+    var addToCart = document.getElementById("popup-add-to-cart");
+    var  currentProduct = null;
+    var  selectedVariant = null;
+    var  selectedColor = '';
+    var  selectedSize = '';
 
     document.querySelectorAll('.js-open-popup').forEach(button => {
         button.addEventListener('DOMContentLoaded', () => {('click', (e) => {
-            const productCard = e.target.closest('.custom-grid_item');
+            var productCard = e.target.closest('.custom-grid_item');
             currentProduct = JSON.parse(
                 productCard.dataset.product
             );
@@ -131,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
             selectedVariant = currentProduct.variants.find(v => {
              return v.option1 === selectedColor &&  v.option2 === selectedSize;
             })
-            console.console.log("selectedVariant", selectedVariant);
+            console.log("selectedVariant", selectedVariant);
             
         }
 
