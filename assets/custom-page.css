@@ -155,11 +155,14 @@ button.custon-grid__button.js-open-popup {
     bottom: 41%;
     left: 60%;
 }
-.classic-leather-jacket button.custon-grid__button {
+.classic-leather-jacket .custon-grid__button {
     top: 17%;
     right: 23%;
 }
-
+.classic-varsity-top .custon-grid__button {
+    top: 22%;
+    right: 46%;
+}
 
 
 
