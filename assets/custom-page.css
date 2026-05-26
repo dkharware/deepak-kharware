@@ -143,6 +143,10 @@ button.custon-grid__button.js-open-popup {
 .custom-grid_item {
     position: relative;
 }
+.blue-silk-tuxedo button.custon-grid__button {
+    top: 50%;
+    right: 11%;
+}
 
 .black-leather-bag button.custon-grid__button {
     bottom: 41%;
