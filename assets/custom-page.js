@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button.addEventListener('click', () => {
                 selectedVariant = variant;
             })
-            popupVariants.appendChind(button);
+            popupVariants.appendChild(button);
         });
     }
 
