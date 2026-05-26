@@ -155,6 +155,12 @@ button.custon-grid__button.js-open-popup {
     bottom: 41%;
     left: 60%;
 }
+.classic-leather-jacket button.custon-grid__button {
+    top: 17%;
+    right: 23%;
+}
+
+
 
 
 @media screen and (max-width:768px) {
