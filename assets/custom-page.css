@@ -103,6 +103,12 @@ section.custom-grid {
     width: 100%;
     max-height: 780px;
 }
+h1.custom-banner__heading {
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 100%;
+}
 
 
 
