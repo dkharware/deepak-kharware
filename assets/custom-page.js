@@ -144,13 +144,14 @@ popup.addEventListener('click', (e) => {
             button.appendChild(document.createTextNode(color));
            
            
-            button.addEventListener('click', () => {
+            button.addEventListener('click', (button) => {
 
                 selectedColor = color;
                 updateSelectedVariant();
                 document.querySelectorAll('.color-button').forEach(btn => {
                     btn.classList.remove('active');
                 });
+
                 button.classList.add('active');
             });
 
