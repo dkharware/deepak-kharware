@@ -15,7 +15,7 @@ document.addEventListner('DOMContentLoaded', () => {
 
     document.querySelectorAll('.js-open-popup').forEach(button => {
         button.addEventListner('click', (e) => {
-            const productCard = e.target.closest('.custom-grid__item');
+            const productCard = e.target.closest('.custom-grid_item');
             currentProduct = JSON.parse(
                 productCard.dataset.product
             );
