@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             var product = await response.json();
 
             popup.classList.add('active');
-            renderPopup(currentProduct);
-            renderColors(currentProduct);
-            renderSizes(currentProduct);
+            renderPopup(product);
+            renderColors(product);
+            renderSizes(product);
 
 
         } catch(error) {
