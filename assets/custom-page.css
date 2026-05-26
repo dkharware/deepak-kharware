@@ -139,6 +139,7 @@ button.custon-grid__button.js-open-popup {
     height: 22px;
     font-size: 18px;
     position: absolute;
+    cursor:pointer;
 }
 .custom-grid_item {
     position: relative;
