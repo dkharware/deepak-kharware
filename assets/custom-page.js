@@ -75,7 +75,7 @@ popup.addEventListener('click', (e) => {
     // render popup data
     function renderPopup(product) {
 
-        console.log("product",product)
+        // console.log("product",product)
 
         popupImage.src = product.featured_image;
         popupTitle.innerText = product.title;
