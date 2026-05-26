@@ -225,7 +225,7 @@ popup.addEventListener('click', (e) => {
     }
 
     // update selected variant
-    function updateSelectedVariant() {
+    function updateSelectedVariant(product) {
 
         selectedVariant = product.variants.find( (v) => {
             return (
