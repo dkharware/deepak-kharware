@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ...new Set(product.variants.map(v => v.option1))
         ]
 
-        color.array.forEach(color => {
+        colors.forEach(color => {
             const button = document.createElement('button');
             button.innerText = color;
             button.classList.add('color-button');
