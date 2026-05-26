@@ -63,10 +63,15 @@
 .product-popup.active {
     display:block;
 }
-.product-popup__overlay {
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.5);
+.product-popup.active .product-popup__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: #00000080;
+    z-index: 2;
+    display: block;
 }
 img#popup-image {
     object-fit: cover;
