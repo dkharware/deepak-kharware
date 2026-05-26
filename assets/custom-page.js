@@ -75,10 +75,14 @@ popup.addEventListener('click', (e) => {
     function renderPopup(product) {
 
         // console.log("product",product)
+
         popupImage.src = product.featured_image;
         popupTitle.innerText = product.title;
         popupDesc.innerHTML = product.description;
         popupPrice.innerText = (product.price / 100).toFixed(2) + "$";
+
+        selectedVariant = product.variants[0];
+
 
     }
 
