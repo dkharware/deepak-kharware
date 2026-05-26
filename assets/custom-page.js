@@ -148,62 +148,62 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // render sizes
-function renderSizes(product) {
+    function renderSizes(product) {
 
-    var sizeOptions = document.getElementById('size-options');
+        var sizeOptions = document.getElementById('size-options');
 
-    var triggerText = document.querySelector(
-        '.custom-select-trigger span'
-    );
+        var triggerText = document.querySelector(
+            '.custom-select-trigger span'
+        );
 
-    sizeOptions.innerHTML = '';
+        sizeOptions.innerHTML = '';
 
-    // get unique sizes
-    var sizes = [
-        ...new Set(
-            product.variants.map(v => v.option2)
-        )
-    ];
+        // get unique sizes
+        var sizes = [
+            ...new Set(
+                product.variants.map(v => v.option2)
+            )
+        ];
 
-    sizes.forEach(size => {
+        sizes.forEach(size => {
 
-        var option = document.createElement('div');
+            var option = document.createElement('div');
 
-        option.classList.add('custom-option');
+            option.classList.add('custom-option');
 
-        option.innerText = size;
+            option.innerText = size;
 
-        option.addEventListener('click', () => {
+            option.addEventListener('click', () => {
 
-            selectedSize = size;
+                selectedSize = size;
 
-            // update selected text
-            triggerText.innerText = size;
+                // update selected text
+                triggerText.innerText = size;
 
-            // close dropdown
-            sizeOptions.classList.remove('active');
+                // close dropdown
+                sizeOptions.classList.remove('active');
 
-            // update selected variant
-            updateSelectedVariant();
+                // update selected variant
+                updateSelectedVariant();
+
+            });
+
+            sizeOptions.appendChild(option);
 
         });
 
-        sizeOptions.appendChild(option);
+        // open close dropdown
+        var trigger = document.querySelector(
+            '.custom-select-trigger'
+        );
 
-    });
+        trigger.addEventListener('click', () => {
 
-    // open close dropdown
-    var trigger = document.querySelector(
-        '.custom-select-trigger'
-    );
+            sizeOptions.classList.toggle('active');
 
-    trigger.addEventListener('click', () => {
+        });
 
-        sizeOptions.classList.toggle('active');
-
-    });
-
-}
+    }
 
     // update selected variant
     function updateSelectedVariant() {
