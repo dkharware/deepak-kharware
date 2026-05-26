@@ -71,6 +71,14 @@
 img#popup-image {
     object-fit: cover;
 }
+h2#popup-title {
+    font-family: Jost;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
 button.product-popup__close {
     background: #fff;
     border: 0;
