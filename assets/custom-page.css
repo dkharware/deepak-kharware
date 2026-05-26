@@ -81,6 +81,10 @@ div#color-options {
 img#popup-image {
     object-fit: cover;
 }
+button.color-button.active {
+    background: #000;
+    color: #fff;
+}
 button.color-button {
     height: 40px;
     background: #fff;
