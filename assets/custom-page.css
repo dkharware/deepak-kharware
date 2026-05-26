@@ -76,6 +76,9 @@
 img#popup-image {
     object-fit: cover;
 }
+div#color-options {
+    border: 0.5px solid #000000;
+}
 h2#popup-title {
     font-family: Jost;
     font-weight: 300;
