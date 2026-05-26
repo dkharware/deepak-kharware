@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // add product to cart 
     async function addProduct(variantId) {
         try {
-            await fatch('/cart/add.js', {
+            await fetch('/cart/add.js', {
                 method:'POST',
                 header: {
                     'Content-Type': 'application/json'
