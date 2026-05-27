@@ -120,11 +120,12 @@ span.color-Text {
 .NavBar-button_text:hover::before{
     left:0;
 }
-.NavBar-button_text:hover svg{
-    color:#fff;
+.NavBar-button_text:hover svg {
     z-index:1;
 }
-
+.NavBar-button_text:hover svg path {
+    fill:#fff;
+}
 .NavBar-button_text:hover span{
     color:#fff;
     z-index:1;
