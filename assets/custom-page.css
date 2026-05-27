@@ -23,11 +23,11 @@
     z-index:1;
 }
 .custom-banner___button:hover svg {
-    transition: 1s ease-in-out; 
+    transition: 2s ease-in-out; 
     z-index:1;
 }
 .custom-banner___button svg {
-    transition: z-index 1s ease-in-out; 
+    transition: z-index 2s ease-in-out; 
     z-index: unset;
 }
 
