@@ -564,6 +564,7 @@ span.custom-arrow.active svg {
         display: flex;
         flex-direction: column;
         max-width: 340px;
+        padding-bottom:39px;
         width: 90%;
         margin: 0 auto;
         left: 5%;
