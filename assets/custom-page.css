@@ -24,7 +24,7 @@
 }
 .custom-banner___button:hover svg {
     z-index:1;
-    transition:.7s ease;
+    transition:  z-index .7s ease;
 }
 .custom-banner___button:hover svg path{
     fill:#000;
