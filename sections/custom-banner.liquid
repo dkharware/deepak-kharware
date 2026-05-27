@@ -48,9 +48,30 @@
   </div>
 
   <div class="custom-banner___image">
-    {% if section.settings.image != blank %}
-      {{ section.settings.image | image_url: width: 1600 | image_tag }}
+   {% if section.settings.image != blank %}
+
+  <picture>
+    
+    {% if section.settings.image_mobile != blank %}
+      <source 
+        media="(max-width: 749px)" 
+        srcset="{{ section.settings.image_mobile | image_url: width: 750 }}"
+      >
     {% endif %}
+
+    {{
+      section.settings.image
+      | image_url: width: 1600
+      | image_tag:
+        loading: 'lazy',
+        widths: '375, 550, 750, 1100, 1600',
+        alt: section.settings.image.alt
+    }}
+
+  </picture>
+
+{% endif %}
+
 
     <div class="custom-banner__content">
       {% if section.settings.heading != blank %}
@@ -139,6 +160,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-mobile",
+      "label": "Mobile Banner Image"
     },
     {
       "type": "text",
