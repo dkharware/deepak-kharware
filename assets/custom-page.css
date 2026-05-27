@@ -41,8 +41,8 @@
 
 
 @keyframes zindex {
-  0% { display: none; }
-  100% { display: inline-block; }
+  0% { visiblity: hidden; }
+  100% { visiblity: visible; }
 }
 
 .custom-banner {
