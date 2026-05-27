@@ -505,6 +505,8 @@ span.custom-arrow.active svg {
     gap: 16px;
     background: #F2F2F2;
     height:0;
+    display:flex;
+    overflow:hidden;
     transition:.5s ease-in-out;
 }
 
