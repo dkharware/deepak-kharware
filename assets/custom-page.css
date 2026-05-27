@@ -326,6 +326,16 @@ p.custom-banner___text {
     background: #F5F5F5;
     padding: 10.3px 50px;
 }
+h2.custom-grid__title {
+    color: #000;
+    font-family: Lustria;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
 .custom-banner__description p {
     font-family: Jost;
     font-weight: 400;
