@@ -36,13 +36,16 @@
    left:0;
 }
 
+
+@keyframes bounce {
+  0% { z-index: none; }
+  100% { z-index: 1; }
+}
+
 .custom-banner {
     position:relative;
     padding:80px 20px;
 }
-
-
-
 .custom-grid-wrapper {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
