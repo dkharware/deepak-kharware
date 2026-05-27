@@ -513,6 +513,8 @@ span.custom-arrow.active svg {
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
+        background: #F2F2F2;
+
     }
     .mobile-hide {
         display:none !important;
