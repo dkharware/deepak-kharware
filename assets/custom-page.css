@@ -500,7 +500,6 @@ span.custom-arrow.active svg {
 }
  .custon-responsive-menu {
     padding: 25px;
-    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
@@ -515,6 +514,9 @@ span.custom-arrow.active svg {
 @media screen and (max-width:768px) {
     .custom-grid_wrapper {
         grid-template-columns:1rf;
+    }
+    .custon-responsive-menu.active{
+        ddisplay: flex !important;
     }
     .NavBar-BrandTitle {
         width: 80%;
