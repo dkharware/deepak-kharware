@@ -27,8 +27,8 @@
     z-index:1;
 }
 .custom-banner___button svg {
-    transition: 1s ease-in-out; 
-    z-index: none;
+    transition: z-index 1s ease-in-out; 
+    z-index: unset;
 }
 
 .custom-banner___button:hover svg path{
@@ -38,12 +38,6 @@
    left:0;
 }
 
-/* 
-@keyframes zindex {
-  0% { z-index: none; }
-  50% { z-index: 1; }
-  100% { z-index: 1; }
-} */
 
 .custom-banner {
     position:relative;
