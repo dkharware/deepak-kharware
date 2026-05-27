@@ -200,6 +200,7 @@ h2#popup-title {
     vertical-align: middle;
     margin: 2px 0 10px;
     min-height:38px;
+    color:#000;
 }
 div#popup-price {
     font-family: Lustria;
