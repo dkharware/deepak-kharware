@@ -358,6 +358,9 @@ button#popup-add-to-cart {
 .custom-option:hover{
     background: #f3f6fb;
 }
+.custom-banner___image {
+    position:relative;
+}
 .custom-banner__content {
     max-width: 483px;
     margin: 51px 67px 0;
