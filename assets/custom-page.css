@@ -558,7 +558,8 @@ span.custom-arrow.active svg {
 .custom-banner__content {
     top: 0;
     background: transparent;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items:center;
     display: flex;
     flex-direction: column;
     max-width: 340px;
