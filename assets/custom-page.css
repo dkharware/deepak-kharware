@@ -378,7 +378,8 @@ button#popup-add-to-cart {
     vertical-align: middle;
 }
 .custom-option:hover{
-    background: #f3f6fb;
+    background: #000;
+    color:#fff;
 }
 .custom-banner___image {
     position:relative;
