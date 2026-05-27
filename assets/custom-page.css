@@ -73,6 +73,10 @@ img#popup-image {
     object-fit: cover;
 }
 
+button.color-button.active ~ .color-button:nth-child(2)::before {
+left: -100% !important;
+}
+
 .color-button:nth-child(2)::before{
     content: '';
     position: absolute;
