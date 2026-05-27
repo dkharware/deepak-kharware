@@ -555,24 +555,25 @@ span.custom-arrow.active svg {
     h1.custom-banner__heading {
         font-size: 30px !important;
     }
-.custom-banner__content {
-    top: 0;
-    background: transparent;
-    justify-content: flex-start;
-    align-items:center;
-    display: flex;
-    flex-direction: column;
-    max-width: 340px;
-    width: 90%;
-    margin: 0 auto;
-    left: 5%;
-}
+    .custom-banner__content {
+        top: 0;
+        background: transparent;
+        justify-content: flex-start;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        width: 90%;
+        margin: 0 auto;
+        left: 5%;
+    }
     p.custom-banner___text {
         overflow: hidden;
         max-height: calc(1.3em * 2);
         font-size: 16px;
         line-height: 130%;
         margin:24px 0;
+        text-align:center;
     }
     .custom-banner___image img {
         height: 264px;
