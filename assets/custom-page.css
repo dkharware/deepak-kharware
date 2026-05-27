@@ -547,6 +547,13 @@ span.custom-arrow.active svg {
     h1.custom-banner__heading {
         font-size: 30px !important;
     }
+    .custom-banner__content {
+    top: 0;
+    background: transparent;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
     p.custom-banner___text {
         overflow: hidden;
         max-height: calc(1.3em * 2);
