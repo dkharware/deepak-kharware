@@ -197,6 +197,7 @@ a.NavBar-button_text {
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
+    align-items:center;
 }
 .NavBar-BrandTitle img {
     height: 19px;
