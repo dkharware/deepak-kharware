@@ -364,10 +364,17 @@ button#popup-add-to-cart {
     display: block;
 }
 
-.custom-option{
-    padding: 14px 20px;
+.custom-option {
+    padding: 10px 20px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
 }
 .custom-option:hover{
     background: #f3f6fb;
