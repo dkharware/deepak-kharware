@@ -1,57 +1,57 @@
 <section class="custom-grid">
+  {% if section.settings.title != blank %}
     <h2 class="custom-grid__title">
-        
+      {{ section.settings.title }}
     </h2>
-    <div class="custom-grid_wrapper"> 
-        {%  for block in section.blocks %}
-        {% assign product = block.settings.product %}
+  {% endif %}
 
-            {%  if product != blank %}
-               <div  class="custom-grid_item {{ product.handle }}" data-product='{{ product | json | escape }}' > 
-                    <div class="custom-grid__image"> 
-                        {{ product.featured_image | image_url: width: 400, height:444 | image_tag }}  
-                    </div>
-                    {% comment %} <h3 class="custom-grid__title">
-                        {{ product.title }}
-                    </h3> {% endcomment %}
-                   <button class="custon-grid__button js-open-popup" >+</button>
+  <div class="custom-grid_wrapper">
+    {% for block in section.blocks %}
+      {% assign product = block.settings.product %}
 
-                </div>
-            {% endif %}
-            
-        {% endfor %}    
-    </div>
- 
-    {% comment %} Popup {% endcomment %}
+      {% if product != blank %}
+        <div class="custom-grid_item {{ product.handle }}" data-product="{{ product | json | escape }}">
+          <div class="custom-grid__image">
+            {{ product.featured_image | image_url: width: 400, height: 444 | image_tag }}
+          </div>
+          <button class="custon-grid__button js-open-popup">+</button>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 
-  {%  render 'custom-product-popup' %}
+  {% comment %} Popup HTML {% endcomment %}
+  {% render 'custom-product-popup' %}
 
-
-</section> 
+</section>
 {% schema %}
 {
-    "name": "product",
-    "blocks": [
+  "name": "product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "product",
+      "settings": [
         {
-            "type": "product",
-            "name": "product",
-            "settings": [
-                {
-                    "type": "product",
-                    "id":"product",
-                    "label": "Select Product",
-
-
-                }
-            ],
-            
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
         }
-    ],
-    "max_blocks": 6,
-    "presets": [
-        {
-            "name": "Custom Product Grid"
-        }
-    ]
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Custom Product Grid"
+    }
+  ]
 }
 {% endschema %}
