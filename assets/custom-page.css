@@ -29,7 +29,7 @@
 }
 
 .custom-banner___button svg {
-    animation: zindex .5s ease-in-out; 
+    animation: zindex 1s ease-in-out; 
    
 }
 
@@ -42,9 +42,9 @@
 
 
 @keyframes zindex {
-  0% { visibility: hidden; }
-  50% { visibility: hidden; }
-  100% { visibility: visible; }
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .custom-banner {
