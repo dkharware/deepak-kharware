@@ -28,11 +28,6 @@
     z-index:1;
 }
 
-.custom-banner___button svg {
-    animation: zindex 1s ease-in-out; 
-   
-}
-
 .custom-banner___button:hover svg path{
     fill:#000;
 }
