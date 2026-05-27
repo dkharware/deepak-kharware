@@ -510,6 +510,12 @@ span.custom-arrow.active svg {
     .custom-grid_wrapper {
         grid-template-columns:1rf;
     }
+    .NavBar-BrandTitle {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-right: 10%;
+    }
     .mobile-hamburger-menu svg.active {
         display:inline-block;
     }
