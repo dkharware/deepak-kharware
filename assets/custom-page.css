@@ -23,9 +23,7 @@
     z-index:1;
 }
 .custom-banner___button:hover svg {
-    transition: 2s ease-in-out; 
     z-index:1;
-    display:inline-block:
 }
 .custom-banner___button svg {
     transition: z-index 2s ease-in-out; 
