@@ -51,22 +51,21 @@
    {% if section.settings.image != blank %}
 
   <picture>
-    
+
     {% if section.settings.image_mobile != blank %}
-      <source 
-        media="(max-width: 768px)" 
-        srcset="{{ section.settings.image_mobile | image_url: width: 750 }}"
+      <source
+        media="(max-width: 768px)"
+        srcset="{{ section.settings.image_mobile | image_url: width: 768 }}"
       >
     {% endif %}
 
-    {{
-      section.settings.image
-      | image_url: width: 1600
-      | image_tag:
-        loading: 'lazy',
-        widths: '375, 550, 750, 1100, 1600',
-        alt: section.settings.image.alt
-    }}
+    <img
+      src="{{ section.settings.image | image_url: width: 1600 }}"
+      alt="{{ section.settings.image.alt }}"
+      loading="lazy"
+      width=""
+      height=""
+    >
 
   </picture>
 
