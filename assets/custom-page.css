@@ -25,7 +25,7 @@
 
 .custom-banner___button:hover svg {
     animation: zindex .5s ease-in-out; 
-   
+    z-index:1;
 }
 
 
