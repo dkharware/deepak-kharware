@@ -566,9 +566,16 @@ span.custom-arrow.active svg {
         margin:24px 0;
     }
     .custom-banner___image img {
-    height: 264px;
-    margin-top: 157px;
-}
+        height: 264px;
+        margin-top: 157px;
+    }
+    .desktop-text{
+        display:none;
+    }
+
+    .mobile-text{
+        display:block;
+    }
     .custom-banner___image {
         height:421px
     }
