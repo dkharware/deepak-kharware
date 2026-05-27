@@ -377,6 +377,9 @@ button#popup-add-to-cart {
     text-align: center;
     vertical-align: middle;
 }
+span.custom-arrow.active svg {
+    transform: rotate(180deg);
+}
 .custom-option:hover{
     background: #000;
     color:#fff;
