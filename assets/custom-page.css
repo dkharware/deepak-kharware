@@ -81,7 +81,6 @@ img#popup-image {
     height: 100%;
     background: #000;
     transition: left 0.5s ease;
-    z-index: -1;
 }
 button.color-button.active {
     color: #fff;}
