@@ -54,7 +54,7 @@
     
     {% if section.settings.image_mobile != blank %}
       <source 
-        media="(max-width: 749px)" 
+        media="(max-width: 768px)" 
         srcset="{{ section.settings.image_mobile | image_url: width: 750 }}"
       >
     {% endif %}
