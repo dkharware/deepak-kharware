@@ -85,7 +85,7 @@ left: -100% !important;
     width: 100%;
     height: 100%;
     background: #000;
-    transition: left 0.5s ease;
+    transition: left 0.3s ease;
 }
 button.color-button.active {
     color: #fff;
@@ -105,7 +105,7 @@ button.color-button {
     margin: 0;
     padding: 0;
     cursor: pointer;
-    transition: color .5s ease;
+    transition: color .3s ease;
 }
 span.color-Text {
     font-family: Jost;
