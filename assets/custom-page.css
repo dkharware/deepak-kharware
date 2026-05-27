@@ -554,7 +554,7 @@ span.custom-arrow.active svg {
     }
     h1.custom-banner__heading {
         font-size: 30px !important;
-        margin-top:49px;
+        margin-top:49px 0 0 0 ;
     }
     .custom-banner__content {
         top: 0;
