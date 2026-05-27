@@ -46,6 +46,13 @@
       {{ section.settings.image | image_url: width: 1600 | image_tag }}
     </div>
   {% endif %}
+  {% if section.settings.addtext != blank %}
+    <div class="custom-banner__description">
+      <p>
+        {{ section.settings.addtext }}
+      </p>
+    </div>
+  {% endif %}
 </section>
 
 {% schema %}
@@ -104,6 +111,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "addtext",
+      "label": "Additional text"
     }
   ],
   "presets": [
