@@ -117,7 +117,7 @@ span.color-Text {
     z-index:1;
     
 }
-.NavBar-button_text::before:hover{
+.NavBar-button_text:hover::before{
     left:0;
 }
 .NavBar-button_text::before {
