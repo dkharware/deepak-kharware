@@ -16,6 +16,7 @@
     align-items: center;
     position:relative;
     overflow:hidden;
+    transition:.5s ease-in-out;
 }
 
 .custom-banner___button:hover span{
