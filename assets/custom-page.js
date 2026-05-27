@@ -202,6 +202,7 @@ popup.addEventListener('click', (e) => {
                 triggerText.innerText = size;
                 // close dropdown
                 sizeOptions.classList.remove('active');
+                arrow.classList.remove('active');
 
                 // update selected variant
                 updateSelectedVariant(product);
