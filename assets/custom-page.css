@@ -365,7 +365,7 @@ button#popup-add-to-cart {
     bottom: 0;
     left: 0;
     background: #fff;
-    height: 0;
+    margin-bottom: 51px;
 }
 .custom-arrow{
     font-size: 14px;
