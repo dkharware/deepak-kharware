@@ -505,6 +505,7 @@ span.custom-arrow.active svg {
     gap: 16px;
     background: #F2F2F2;
     display:none; 
+    transition:.5s ease-in-out;
 }
 
 .mobile-hamburger-menu svg {
@@ -517,6 +518,7 @@ span.custom-arrow.active svg {
     }
     .custon-responsive-menu.active{
         display: flex !important;
+        transition:.5s ease-in-out;
     }
     .NavBar-BrandTitle {
         width: 80%;
