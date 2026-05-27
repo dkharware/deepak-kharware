@@ -583,6 +583,9 @@ span.custom-arrow.active svg {
     section.custom-grid {
         margin: 40px 16px 23px;
     }
+    .custom-grid__image img {
+        height: 186px;
+    }
     h2.custom-grid__title {
         font-size: 24px;
     }
