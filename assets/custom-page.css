@@ -220,6 +220,7 @@ a.NavBar-button_text {
     text-decoration: none;
     display: flex;
     position:relative;
+    overflow:hidden;
     gap: 18px;
     align-items: center;
 }
