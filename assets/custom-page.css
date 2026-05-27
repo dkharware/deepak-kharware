@@ -41,8 +41,8 @@
 
 
 @keyframes zindex {
-  0% { z-index: unset; }
-  100% { z-index: 1; }
+  0% { display: none; }
+  100% { display: inline-block; }
 }
 
 .custom-banner {
