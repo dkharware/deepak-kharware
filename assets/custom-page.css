@@ -504,8 +504,8 @@ span.custom-arrow.active svg {
     .custom-grid_wrapper {
         grid-template-columns:1rf;
     }
-    .mobile-hide{
-        display:none;
+    .mobile-hide {
+        display:none !important;
     }
     .product-popup__inner {
         flex-direction:column;
