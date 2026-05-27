@@ -81,9 +81,14 @@
       {% endif %}
 
       {% if section.settings.subheading != blank %}
-        <p class="custom-banner___text">
-          {{ section.settings.subheading }}
-        </p>
+          <p class="custom-banner___text desktop-text">
+             {{ section.settings.subheading }}
+          </p>
+
+          <p class="custom-banner___text mobile-text">
+             {{ section.settings.subheading | truncatewords: 12, '' }}
+          </p>
+        
       {% endif %}
 
       {% if section.settings.button_text != blank %}
