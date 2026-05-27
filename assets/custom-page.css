@@ -540,7 +540,32 @@ span.custom-arrow.active svg {
     .mobile-hamburger-menu svg.active {
         display:inline-block;
     }
-   
+
+    .blue-silk-tuxedo button.custon-grid__button {
+        top: 50%;
+        right: 11%;
+    }
+    .chequered-red-shirt button.custon-grid__button {
+        top: 20%;
+        right: 33%;
+    }
+    .black-leather-bag button.custon-grid__button {
+        bottom: 41%;
+        left: 60%;
+    }
+    .classic-leather-jacket .custon-grid__button {
+        top: 17%;
+        right: 23%;
+    }
+    .classic-varsity-top .custon-grid__button {
+        top: 22%;
+        right: 46%;
+    }
+    .dark-denim-top .custon-grid__button {
+        top: 37%;
+        right: 19%;
+    }
+    
     .Custom-NavBar {
         background: #f7f7f7 !important;
         padding: 16px !important;
