@@ -254,9 +254,11 @@
         }
       }
     {% endstyle %}
-
+    
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
     {{ 'custom-page.css'| asset_url | stylesheet_tag }}
+    
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
     <script src="{{ 'custom-page.js' | asset_url }}" defer  ></script>
 
