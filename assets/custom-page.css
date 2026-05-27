@@ -499,7 +499,6 @@ span.custom-arrow.active svg {
     border-left: 0.5px solid #000000;
 }
  .custon-responsive-menu {
-    padding: 25px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
@@ -519,6 +518,7 @@ span.custom-arrow.active svg {
         grid-template-columns:1rf;
     }
     .custon-responsive-menu.active{
+        padding: 25px;
         height: auto !important;
         transition:.5s ease-in-out;
     }
