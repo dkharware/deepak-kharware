@@ -1,5 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+//  Menu toggle 
+
+const menuBtn = document.querySelector('.mobile-hamburger-menu');
+const menu = document.querySelector('.custon-responsive-menu');
+
+const closeIcon = document.querySelector('.icon__close');
+const menuIcon = document.querySelector('.icon__menuList');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+
+  // only one icon active at a time
+  if (menu.classList.contains('active')) {
+    closeIcon.classList.add('active');
+    menuIcon.classList.remove('active');
+  } else {
+    closeIcon.classList.remove('active');
+    menuIcon.classList.add('active');
+  }
+});
+
+
+
+
+
     var popup = document.getElementById("product-popup");
     var popupImage = document.getElementById("popup-image");
     var popupTitle = document.getElementById("popup-title");
