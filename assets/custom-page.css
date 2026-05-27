@@ -370,6 +370,10 @@ button#popup-add-to-cart {
     left: 0;
     background: #fff;
 }
+.custom-banner___image {
+    position: relative;
+    max-height: 780px;
+}
 .custom-arrow{
     font-size: 14px;
     width:55px;
