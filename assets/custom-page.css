@@ -14,6 +14,8 @@
     display: inline-flex;
     gap: 29px;
     align-items: center;
+    position:relative;
+    overflow:hidden;
 }
 
 .custom-banner {
@@ -128,7 +130,7 @@ span.color-Text {
     color:#fff;
     z-index:1;
 }
-.custom-banner___button:hover {
+.custom-banner___button::before {
     content: '';
     position: absolute;
     top: 0;
