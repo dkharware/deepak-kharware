@@ -169,6 +169,7 @@ popup.addEventListener('click', (e) => {
         
 
         var sizeOptions = document.getElementById('size-options');
+        var arrow = document.querySelector('.custom-arrow');
 
         var triggerText = document.querySelector(
             '.custom-select-trigger span'
@@ -219,6 +220,9 @@ popup.addEventListener('click', (e) => {
         trigger.addEventListener('click', () => {
 
             sizeOptions.classList.toggle('active');
+            arrow.classList.toggle('active');
+
+            
 
         });
 
