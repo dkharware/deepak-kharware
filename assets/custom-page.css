@@ -120,6 +120,10 @@ span.color-Text {
 .NavBar-button_text:hover::before{
     left:0;
 }
+.NavBar-button_text:hover span{
+color:#fff;
+z-index:1;
+}
 .NavBar-button_text::before {
     content: '';
     position: absolute;
