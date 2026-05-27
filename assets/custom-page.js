@@ -137,12 +137,15 @@ popup.addEventListener('click', (e) => {
 
         var button = document.createElement('button');
         var colorDot = document.createElement('span');
+        var colorText = document.createElement('span');
 
         button.classList.add('color-button');
         colorDot.style.backgroundColor = color;
         colorDot.classList.add('color-dot');
+        colorText.classList.add('color-Text');
+        colorText.innerText = color;
         button.appendChild(colorDot);
-        button.appendChild(document.createTextNode(color));
+        button.appendChild(colorText);
 
         button.addEventListener('click', () => {
 
