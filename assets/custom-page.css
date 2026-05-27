@@ -569,6 +569,9 @@ span.custom-arrow.active svg {
         margin: 0 auto;
         left: 5%;
     }
+    .custom-banner___button {
+       margin-top: 165px;
+    }
     p.custom-banner___text {
         overflow: hidden;
         max-height: calc(1.3em * 2);
