@@ -504,7 +504,7 @@ span.custom-arrow.active svg {
     justify-content: center;
     gap: 16px;
     background: #F2F2F2;
-    display:none; 
+    height:0;
     transition:.5s ease-in-out;
 }
 
@@ -517,7 +517,7 @@ span.custom-arrow.active svg {
         grid-template-columns:1rf;
     }
     .custon-responsive-menu.active{
-        display: flex !important;
+        display: auto !important;
         transition:.5s ease-in-out;
     }
     .NavBar-BrandTitle {
