@@ -346,7 +346,6 @@ button#popup-add-to-cart {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .custom-option:hover{
     background: #f3f6fb;
 }
