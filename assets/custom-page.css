@@ -23,7 +23,11 @@
     z-index:1;
 }
 .custom-banner___button:hover svg {
-    animation: zindex 2s ease-in-out; 
+    transition: .5s ease-in-out; 
+}
+.custom-banner___button svg {
+    transition: .5s ease-in-out; 
+    z-index:0;
 }
 
 .custom-banner___button:hover svg path{
@@ -33,12 +37,12 @@
    left:0;
 }
 
-
+/* 
 @keyframes zindex {
   0% { z-index: none; }
   50% { z-index: 1; }
   100% { z-index: 1; }
-}
+} */
 
 .custom-banner {
     position:relative;
