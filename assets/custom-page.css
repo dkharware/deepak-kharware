@@ -115,9 +115,11 @@ span.color-Text {
     letter-spacing: -2%;
     text-transform: capitalize;
     z-index:1;
-    animation:bounce .3s;
+    
 }
-
+.color-button.active span.color-Text{
+  animation:bounce .3s;
+}
 @keyframes bounce {
   0% { transform: translateX(0px); }
   50% { transform: translateX(-5px); }
