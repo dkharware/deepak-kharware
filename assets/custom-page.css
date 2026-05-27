@@ -373,6 +373,7 @@ button#popup-add-to-cart {
     font-size: 16px;
     line-height: 100%;
     letter-spacing: -2%;
+    color:#000;
     text-align: center;
     vertical-align: middle;
 }
