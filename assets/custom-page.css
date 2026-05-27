@@ -39,7 +39,6 @@
 
 @keyframes zindex {
   0% { z-index: unset; }
-  50% { z-index: unset; }
   100% { z-index: 1; }
 }
 
