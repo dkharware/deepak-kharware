@@ -42,8 +42,8 @@
 
 
 @keyframes zindex {
-  0% { visiblity: hidden; }
-  100% { visiblity: visible; }
+  0% { visibility: hidden; }
+  100% { visibility: visible; }
 }
 
 .custom-banner {
