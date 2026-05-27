@@ -576,6 +576,9 @@ span.custom-arrow.active svg {
         overflow: hidden;
         max-height: 13.42px;
     }
+    h2.custom-grid__title {
+    font-size: 24px;
+}
     p.custom-banner___text {
         overflow: hidden;
         max-height: calc(1.3em * 2);
