@@ -502,10 +502,16 @@ span.custom-arrow.active svg {
    display:none; 
 }
 
+.mobile-hamburger-menu svg {
+    display:none;
+}
 
 @media screen and (max-width:768px) {
     .custom-grid_wrapper {
         grid-template-columns:1rf;
+    }
+    .mobile-hamburger-menu svg.active {
+        display:inline-block;
     }
     .custon-responsive-menu {
         padding: 25px;
