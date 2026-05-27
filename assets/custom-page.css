@@ -91,6 +91,7 @@ div#color-options {
     border: .5px solid #000000;
     height: 40px;
     overflow: hidden;
+    margin-bottom:11px;
 }
 img#popup-image {
     object-fit: cover;
