@@ -36,8 +36,8 @@
 
 @keyframes view {
   0% { z-index: 1; }
-  50% { z-index: none; }
-  100% { z-index: 1; }
+  50% { z-index: 1; }
+  100% { z-index: none; }
 }
 
 .custom-banner {
