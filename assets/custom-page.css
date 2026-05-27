@@ -23,7 +23,7 @@
     z-index:1;
 }
 .custom-banner___button:hover svg {
-    animation: view 1s; 
+    animation: view .5s; 
 }
 
 .custom-banner___button:hover svg path{
