@@ -360,12 +360,11 @@ button#popup-add-to-cart {
 }
 .custom-banner__content {
     max-width: 483px;
-    margin: 0 67px;
+    margin: 51px 67px 0;
     position: absolute;
     bottom: 0;
     left: 0;
     background: #fff;
-    margin-bottom: 51px;
 }
 .custom-arrow{
     font-size: 14px;
