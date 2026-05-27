@@ -544,5 +544,10 @@ span.custom-arrow.active svg {
     .product-popup__inner {
         flex-direction:column;
     }
+    .custom-banner___image {
+        height:421px
+    }
+
+
 }
 
