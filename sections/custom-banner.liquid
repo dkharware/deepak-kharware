@@ -62,11 +62,12 @@
     srcset="
       {{ section.settings.image | image_url: width: 768 }} 768w,
       {{ section.settings.image | image_url: width: 1200 }} 1200w,
-      {{ section.settings.image | image_url: width: 1600 }} 1600w
-    "
-    sizes="100vw"
+      {{ section.settings.image | image_url: width: 1600 }} 1600w"
+      sizes="100vw"
     alt="{{ section.settings.image.alt }}"
-    loading="lazy"
+    loading="lazy" 
+    width=""
+    height=""
   >
 </picture>
 
