@@ -514,7 +514,11 @@ span.custom-arrow.active svg {
         justify-content: center;
         gap: 16px;
         background: #F2F2F2;
-
+    }
+    .Custom-NavBar {
+        background: #f7f7f7 !important;
+        padding: 16px !important;
+        height: 65px !important;
     }
     .mobile-hide {
         display:none !important;
