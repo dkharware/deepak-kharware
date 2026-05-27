@@ -572,6 +572,10 @@ span.custom-arrow.active svg {
     .custom-banner___button {
        margin-top: 165px;
     }
+    .custom-banner__description p {
+        overflow: hidden;
+        max-height: 13.42px;
+    }
     p.custom-banner___text {
         overflow: hidden;
         max-height: calc(1.3em * 2);
