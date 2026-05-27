@@ -516,7 +516,7 @@ span.custom-arrow.active svg {
         grid-template-columns:1rf;
     }
     .custon-responsive-menu.active{
-        ddisplay: flex !important;
+        display: flex !important;
     }
     .NavBar-BrandTitle {
         width: 80%;
