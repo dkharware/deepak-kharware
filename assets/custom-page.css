@@ -84,9 +84,7 @@ img#popup-image {
     z-index: -1;
 }
 button.color-button.active {
-    background: #000;
-    color: #fff;
-}
+    color: #fff;}
 .color-button.active::before{
     left: 0;
 }
