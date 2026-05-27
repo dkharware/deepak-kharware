@@ -192,6 +192,9 @@ a.NavBar-button_text {
     gap: 18px;
     align-items: center;
 }
+.NavBar-BrandTitle {
+    height:19px;
+}
 .Custom-NavBar {
     background: #F5F5F5;
     display: flex;
