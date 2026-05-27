@@ -504,6 +504,13 @@ span.custom-arrow.active svg {
     .custom-grid_wrapper {
         grid-template-columns:1rf;
     }
+    .custon-responsive-menu {
+        padding: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
     .mobile-hide {
         display:none !important;
     }
