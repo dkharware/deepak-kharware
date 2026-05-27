@@ -115,6 +115,7 @@ span.color-Text {
     letter-spacing: -2%;
     text-transform: capitalize;
     z-index:1;
+    animation:bounce .3s;
 }
 
 @keyframes bounce {
