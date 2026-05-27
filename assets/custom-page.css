@@ -17,6 +17,12 @@
     position:relative;
     overflow:hidden;
 }
+
+.custom-banner___button:hover span{
+    color:#000;
+    z-index:1;
+}
+
 .custom-banner___button:hover::before {
    left:0;
 }
