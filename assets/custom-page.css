@@ -127,7 +127,7 @@ span.color-Text {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #fff544;
+    background: #000;
     transition: left 0.3s ease;
 }
 .color-button.active span.color-Text{
