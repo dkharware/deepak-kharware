@@ -72,6 +72,9 @@ div#color-options {
 img#popup-image {
     object-fit: cover;
 }
+.color-button:nth-child(2)::before{
+    left: -200%;
+}
 .color-button::before{
     content: '';
     position: absolute;
