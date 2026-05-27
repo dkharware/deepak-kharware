@@ -498,6 +498,9 @@ span.custom-arrow.active svg {
     width:55px;
     border-left: 0.5px solid #000000;
 }
+.custon-responsive-menu {
+   display:none; 
+}
 
 
 @media screen and (max-width:768px) {
@@ -506,7 +509,7 @@ span.custom-arrow.active svg {
     }
     .custon-responsive-menu {
         padding: 25px;
-        display: flex;
+        display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
