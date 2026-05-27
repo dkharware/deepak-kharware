@@ -116,6 +116,14 @@ span.color-Text {
     text-transform: capitalize;
     z-index:1;
 }
+
+@keyframes bounce {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(-5px); }
+  100% { transform: translateX(0px); }
+}
+
+
 span.color-dot {
     width: 5.81px;
     display: inline-block;
