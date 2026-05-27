@@ -498,8 +498,14 @@ span.custom-arrow.active svg {
     width:55px;
     border-left: 0.5px solid #000000;
 }
-.custon-responsive-menu {
-   display:none; 
+ .custon-responsive-menu {
+    padding: 25px;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    background: #F2F2F2;
+    display:none; 
 }
 
 .mobile-hamburger-menu svg {
@@ -519,14 +525,7 @@ span.custom-arrow.active svg {
     .mobile-hamburger-menu svg.active {
         display:inline-block;
     }
-    .custon-responsive-menu {
-        padding: 25px;
-        display: flex !important;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        background: #F2F2F2;
-    }
+   
     .Custom-NavBar {
         background: #f7f7f7 !important;
         padding: 16px !important;
