@@ -363,7 +363,8 @@ button#popup-add-to-cart {
 }
 .custom-banner__content {
     max-width: 483px;
-    margin: 0 67px 51px;
+    margin: 0 67px;
+    padding-bottom:51px;
     position: absolute;
     bottom: 0;
     left: 0;
