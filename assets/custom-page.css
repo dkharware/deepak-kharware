@@ -43,6 +43,7 @@
 
 @keyframes zindex {
   0% { visibility: hidden; }
+  50% { visibility: hidden; }
   100% { visibility: visible; }
 }
 
