@@ -563,6 +563,7 @@ span.custom-arrow.active svg {
         max-height: calc(1.3em * 2);
         font-size: 16px;
         line-height: 130%;
+        margin:24px 0
     }
     .custom-banner___image {
         height:421px
