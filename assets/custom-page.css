@@ -423,6 +423,11 @@ button#popup-add-to-cart {
     text-align: center;
     margin-top:51px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 28px;
+    padding-right: 30px;
 }
 .custom-select-trigger {
     background: #fff;
