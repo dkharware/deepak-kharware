@@ -100,15 +100,17 @@ button.color-button {
     margin: 0;
     padding: 0;
     cursor: pointer;
+    transition: color .5s ease;
+}
+span.color-Text {
     font-family: Jost;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
     letter-spacing: -2%;
     text-transform: capitalize;
-    transition: color .5s ease;
+    z-index:1;
 }
-
 span.color-dot {
     width: 5.81px;
     display: inline-block;
