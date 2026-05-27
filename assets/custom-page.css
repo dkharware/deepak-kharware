@@ -23,10 +23,10 @@
     z-index:1;
 }
 .custom-banner___button:hover svg {
-    transition: .5s ease-in-out; 
+    transition: 1s ease-in-out; 
 }
 .custom-banner___button svg {
-    transition: .5s ease-in-out; 
+    transition: 1s ease-in-out; 
     z-index:0;
 }
 
