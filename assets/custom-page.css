@@ -28,10 +28,10 @@
      z-index:1;
 }
 
-.custom-banner___button svg {
+/* .custom-banner___button svg {
     animation: zindex .5s ease-in-out; 
    
-}
+} */
 
 .custom-banner___button:hover svg path{
     fill:#000;
