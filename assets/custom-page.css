@@ -1,6 +1,8 @@
 .custom-banner___button {
     font-family: Jost;
     padding: 14px 23px;
+    width:100%;
+    max-width:220px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20.48px;
