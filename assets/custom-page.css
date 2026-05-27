@@ -83,7 +83,8 @@ img#popup-image {
     transition: left 0.5s ease;
 }
 button.color-button.active {
-    color: #fff;}
+    color: #fff;
+}
 .color-button.active::before{
     left: 0;
 }
