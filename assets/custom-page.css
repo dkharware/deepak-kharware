@@ -25,11 +25,12 @@
 
 .custom-banner___button:hover svg {
     animation: zindex .5s ease-in-out;    
+     z-index:1;
 }
 
 .custom-banner___button svg {
     animation: zindex .5s ease-in-out; 
-    z-index:1;
+   
 }
 
 .custom-banner___button:hover svg path{
