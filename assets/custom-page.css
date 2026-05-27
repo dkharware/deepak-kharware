@@ -28,7 +28,7 @@
 }
 .custom-banner___button svg {
     transition: 1s ease-in-out; 
-    z-index:none;
+    z-index: none;
 }
 
 .custom-banner___button:hover svg path{
