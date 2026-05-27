@@ -18,7 +18,7 @@
     overflow:hidden;
 }
 .custom-banner___button:hover::before {
-  left:0;
+   left:0;
 }
 
 .custom-banner {
