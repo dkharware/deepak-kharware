@@ -25,8 +25,8 @@
 
 .custom-banner___button:hover svg {
     animation: zindex 1s ease-in-out;    
-    z-index:1;
 }
+
 
 .custom-banner___button:hover svg path{
     fill:#000;
@@ -37,8 +37,8 @@
 
 
 @keyframes zindex {
-  0% { opacity: 0; }
-  50% { opacity: 0; }
+  0% { z-index: unset; }
+  50% { opacity: unset; }
   100% { opacity: 1; }
 }
 
